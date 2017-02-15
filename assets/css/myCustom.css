@@ -7,4 +7,5 @@
 .tint1 {
   background-color: rgba(00, 00, 33, .90);
   border-radius: 12px;
+  box-shadow: 0 0 120px yellow;
 }
