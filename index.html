@@ -24,11 +24,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<!--
-				================================
-				 SECTION
-				================================
-			-->
+			<!-- ================================ -->
 			<section data-background-video="./assets/video/sea1.mp4" data-background-video-loop="loop">
 				<div>
 					<h1 style="text-shadow: 0 10px 16px #000033; margin-bottom: -30px;">Dokku</h1>
@@ -50,7 +46,14 @@
 			<!-- ================================ -->
 			<section>
 				What is Dokku? Heroku inside a Docker container. What problem does it solve? Fast, easy deployments. Multiple apps on one
-				domain.
+				domain. Not tied to any one cloud hosting provider. Can be deployed in many... 
+			</section>
+			<!-- ================================ -->
+			<section>
+				Caveats and what Dokku is *not* good for: <br>
+				- must re-push apps after server reboot (Docker changed the way networking works... explain this...)<br>
+				- only as secure as an open source project can be<br>
+				- Best for: small deployments, internal apps, testing
 			</section>
 			<!-- ================================ -->
 			<section>
@@ -58,7 +61,12 @@
 			</section>
 			<!-- ================================ -->
 			<section>
-				What is AWS Lightsail? Ubuntu VM. Same on other cloud providers: Google Cloud, Azure, DigitalOcean...
+				Plugins are available for quick installation and configuration of popular tools. Give current list of plugins. We will use the plugin Dokku-Letsencrypt to secure our website (HTTPS).
+			</section>
+			<!-- ================================ -->
+			<section data-background-video="./assets/video/lightsail-choose-instance-types1.mp4" data-background-video-loop="loop" class="tint1">
+				What is AWS Lightsail? Ubuntu VM. Same on other cloud providers: Google Cloud, Azure, DigitalOcean...<br>
+				Amazon Lightsail is the latest addition to the AWS family of compute services and the fastest way to get your next cloud server up and running. For a low price that starts at $5/month, Lightsail offers a bundle of resources and services that let you jumpstart your cloud project in a few clicks. The new, intuitive Lightsail console makes it simple to manage your virtual resources, letting you focus on code, not system administration.
 			</section>
 			<!-- ================================ -->
 			<section>
