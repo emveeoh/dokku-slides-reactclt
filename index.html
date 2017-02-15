@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/theme/night.css">
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- My Custom CSS -->
+	<link rel="stylesheet" href="./assets/css/myCustom.css">
 	<!-- Printing and PDF exports -->
 	<script>
 		var link = document.createElement('link');
@@ -22,23 +24,86 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-
 			<section data-background-video="./assets/video/sea1.mp4" data-background-video-loop="loop">
 				<div>
-					<div>
-						<span><img src="./assets/img/DokkuLogo1.png" style="width: 30%; margin: 0px; border: none;"></span>
-						<span><img src="./assets/img/AWSLightsailLogo1.png" style="width: 50%; margin: 0px; border: none;"></span>
+					<h1 style="text-shadow: 0 10px 16px #000033; margin-bottom: -30px;">Dokku</h1>
+					<h2 style="text-shadow: 0 6px 12px #000033; margin-bottom: -10px;">(Docker + Heroku)</h2>
+					<div style="display: flex; align-items: center; justify-content: center;">
+						<div style="flex: 1;"><img src="./assets/img/DokkuLogo1.png" style="margin: 0px; border: none;"></div>
+						<div style="flex: 2;"><img src="./assets/img/AWSLightsailLogo1.png" style="margin: 0px; border: none;"></div>
 					</div>
-					<h1 style="text-shadow: 6px 6px 12px #000033;">Dokku</h1>
-					<h2 style="text-shadow: 2px 2px 2px #000033;">(Docker + Heroku)</h2>
 					<div>
-					<h4 style="background-color:#000033;">Deploy apps to the cloud using 'GIT PUSH ...' on <span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
+						<h4 class="tint1" style="box-shadow: 0 6px 12px #000033; border-radius: 12px;">Deploy apps to the cloud using 'GIT PUSH' on <span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
 					</div>
-					<!--<img src="./assets/img/Dokku-AWS-top-graphic2.png" style="background-color: none; border: none;">-->
 				</div>
 			</section>
-
-			<section>Slide 2</section>
+			<section data-background-video="./assets/video/beach1.mp4" data-background-video-loop="loop" class="tint1">
+				<h3>Heroku's simple 'GIT PUSH' deployment</h3>
+				Heroku and the awesomeness of the 'GIT PUSH...' deployment. Buildpacks.
+			</section>
+			<section>
+				What is Dokku? What problem does it solve? Fast, easy deployments. Multiple apps on one domain.
+			</section>
+			<section>
+				What are buildpacks. Languages supported.
+			</section>
+			<section>
+				What is AWS Lightsail? Ubuntu VM. Same on other cloud providers: Google Cloud, Azure, DigitalOcean...
+			</section>
+			<section>
+				Let's setup Dokku on a $5 LightSail VM instance...
+			</section>
+			<section>
+				CREATE A NEW AWS UBUNTU SERVER INSTANCE
+			</section>
+			<section>
+				CONNECT TO YOUR NEW SERVER AND UPDATE IT
+			</section>
+			<section>
+				CREATE AND ASSIGN A STATIC IP
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
+			<section>
+				ADD A NEW DNS ZONE
+			</section>
 		</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>
@@ -46,7 +111,7 @@
 	<script>
 		// More info https://github.com/hakimel/reveal.js#configuration
 		Reveal.initialize({
-			controls: true,
+			controls: false,
 			progress: true,
 			history: true,
 			center: true,

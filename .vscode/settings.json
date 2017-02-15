@@ -11,5 +11,6 @@
     "**/.Gruntfile.js": true,
     "**/plugin": true,
     "**/test": true,
-  }
+  },
+  "cSpell.words": []
 }
