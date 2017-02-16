@@ -1,0 +1,8 @@
+/*! * * * * * * * * * * * * * * * * * * * *\  
+  CSShake :: shake-slow
+  v1.5.0
+  CSS classes to move your DOM
+  (c) 2015 @elrumordelaluz
+  http://elrumordelaluz.github.io/csshake/
+  Licensed under MIT
+\* * * * * * * * * * * * * * * * * * * * */.shake-slow-two{display:inline-block;transform-origin:center center}.shake-constant-two.shake-constant-two--hover:hover,.shake-freeze,.shake-trigger:hover .shake-constant-two.shake-constant-two--hover{animation-play-state:paused}.shake-freeze:hover,.shake-slow-two:hover,.shake-trigger:hover .shake-freeze,.shake-trigger:hover .shake-slow-two{animation-play-state:running}@keyframes shake-slow{2%{transform:translate(-4px,0) rotate(-2.5deg)}10%{transform:translate(-7px,8px) rotate(.5deg)}20%{transform:translate(-8px,-9px) rotate(3.5deg)}40%{transform:translate(5px,6px) rotate(2.5deg)}50%{transform:translate(-7px,4px) rotate(-1.5deg)}60%{transform:translate(-4px,10px) rotate(-2.5deg)}70%{transform:translate(-3px,3px) rotate(-1.5deg)}80%{transform:translate(-9px,-9px) rotate(-2.5deg)}90%{transform:translate(10px,-8px) rotate(2.5deg)}0%,100%{transform:translate(0,0) rotate(0)}}.shake-slow-two.shake-constant-two,.shake-slow-two.shake-freeze,.shake-slow-two:hover,.shake-trigger:hover .shake-slow-two{animation-name:shake-slow;animation-duration:18s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
