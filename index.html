@@ -30,14 +30,14 @@
 			<!-- ================================ -->
 			<section data-background-video="./assets/video/sea1.mp4" data-background-video-loop="loop">
 				<div>
-					<h1 style="color: deepskyblue; text-shadow: 0 10px 16px #000033; margin-bottom: -30px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 3px;">Dokku</h1>
-					<h2 style="text-shadow: 0 6px 12px #000033; margin-bottom: -10px;">(Docker + Heroku)</h2>
+					<h1 style="color: deepskyblue; text-shadow: 0 10px 16px rgba(00,00,33,.5); margin-bottom: -30px; -webkit-text-stroke-color: white; -webkit-text-stroke-width: 3px;">Dokku</h1>
+					<h2 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">(Docker + Heroku)</h2>
 					<div style="display: flex; align-items: center;">
 						<div class="shake-slow-one shake-constant-one" style="flex: 1.4;"><img src="./assets/img/DokkuLogo1.png" style="margin: 0px; border: none;"></div>
 						<div class="shake-slow-two shake-constant-two" style="flex: 1.8;"><img src="./assets/img/AWSLightsailLogo1.png" style="margin: 0px; border: none;"></div>
 					</div>
 					<div>
-						<h4 class="tint1" style="box-shadow: 0 6px 12px #000033; border-radius: 12px;">Deploy apps to the cloud using 'GIT PUSH' on <span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
+						<h4 class="tint1" style="box-shadow: 0 6px 12px rgba(00,00,33,.5); border-radius: 12px;">Deploy apps to the cloud using 'GIT PUSH' on <span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
 					</div>
 				</div>
 			</section>
@@ -47,33 +47,49 @@
 				Heroku and the awesomeness of the 'GIT PUSH...' deployment. Buildpacks.
 			</section>
 			<!-- ================================ -->
-			<section data-background-video="./assets/video/evolution-of-dokku1.mp4" data-background-video-loop="loop" class="tint1">
-			<h2>What is Dokku &amp; why should I care?</h2>
-				 tl;dr => Heroku inside a Docker container. Fast, easy deployments.
-				 <br>
-				 <br>
-				 Multiple apps on one
-				domain. Not tied to any one cloud hosting provider. Can be deployed in many... 
+			<section>
+				<h2>What is Dokku &amp; why should I care?</h2>
+				<p>tl;dr => Heroku PaaS inside a Docker container. Fast, easy deployments of apps and static sites.</p>
+				<p>Open-source project released in 2013 by Jeff Lindsay. Over 13,000 stars 260+ contributors on Github.</p>
+				<p>Multiple sites / apps / microservices on one domain.</p>
+				<p>Not tied to any one cloud hosting provider. Can be deployed in many...</p>
+				<p>A fresh VM running any of the following operating systems:
+					<ul>
+						<li>Ubuntu 16.04 x64</li>
+						<li>Ubuntu 14.04 x64</li>
+						<li>Debian 8.2 x64</li>
+					</ul>
+				</p>
 			</section>
 			<!-- ================================ -->
 			<section>
-				Caveats and what Dokku is *not* good for: <br>
-				- must re-push apps after server reboot (Docker changed the way networking works... explain this...)<br>
-				- only as secure as an open source project can be<br>
-				- Best for: small deployments, internal apps, testing
+				<h2>Heroku Buildpacks</h2>
+				What are buildpacks. Languages supported. Buildpacks were created by Heroku and open-sourced.
 			</section>
 			<!-- ================================ -->
 			<section>
-				What are buildpacks. Languages supported.
+				Plugins are available for quick installation and configuration of popular tools. Give current list of plugins. We will use
+				the plugin Dokku-Letsencrypt to secure our website (HTTPS).
 			</section>
 			<!-- ================================ -->
 			<section>
-				Plugins are available for quick installation and configuration of popular tools. Give current list of plugins. We will use the plugin Dokku-Letsencrypt to secure our website (HTTPS).
+				<h2>Caveats</h2>
+				<ul>
+					<li>Only as secure as an open source project can be</li>
+					<li>Best for: small deployments, internal apps, testing</li>
+					<li>(Bug) Must re-push apps after server reboot (Docker changed the way networking works... explain this...)</li>
+					<li></li>
+					<li></li>
+				</ul>
 			</section>
 			<!-- ================================ -->
 			<section data-background-video="./assets/video/lightsail-choose-instance-types1.mp4" data-background-video-loop="loop" class="tint1">
-				What is AWS Lightsail? Ubuntu VM. Same on other cloud providers: Google Cloud, Azure, DigitalOcean...<br>
-				Amazon Lightsail is the latest addition to the AWS family of compute services and the fastest way to get your next cloud server up and running. For a low price that starts at $5/month, Lightsail offers a bundle of resources and services that let you jumpstart your cloud project in a few clicks. The new, intuitive Lightsail console makes it simple to manage your virtual resources, letting you focus on code, not system administration.
+				<p>Let's setup Dokku on a $5 LightSail VM instance...</p>
+				<p>What is AWS Lightsail? Ubuntu VM. Same on other cloud providers: Google Cloud, Azure, DigitalOcean...</p>>
+				<p>Amazon Lightsail is the latest addition to the AWS family of compute services and the fastest way to get your next cloud
+					server up and running. For a low price that starts at $5/month, Lightsail offers a bundle of resources and services
+					that let you jumpstart your cloud project in a few clicks. The new, intuitive Lightsail console makes it simple to manage
+					your virtual resources, letting you focus on code, not system administration.</p>
 			</section>
 			<!-- ================================ -->
 			<section>
@@ -121,7 +137,12 @@
 			</section>
 			<!-- ================================ -->
 			<section>
-				...
+				<h2>Resources:</h2>
+				<ul>
+					<li>Github project home: dokku/dokku</li>
+					<li>Official Documentation: http://dokku.viewdocs.io/dokku</li>
+					<li>My step-by-step installation guide on Github: emveeoh/dokku-aws-lightsail-tutorial</li>
+				</ul>
 			</section>
 			<!-- ================================ -->
 			<section>
