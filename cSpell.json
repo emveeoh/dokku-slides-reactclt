@@ -14,7 +14,12 @@
         "zenburn",
         "Heroku's",
         "hljs",
-        "AWS"
+        "AWS",
+        "jumpstart",
+        "emveeoh",
+        "buildpack",
+        "csshake",
+        "Letsencrypt"
     ],
     // flagWords - list of words to be always considered incorrect
     // This is useful for offensive words and common spelling errors.

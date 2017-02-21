@@ -1,11 +1,11 @@
-.reveal section img { 
-  background: none; 
-  border: none; 
+.reveal section img {
+  background: none;
+  border: none;
   box-shadow: none;
 }
 
 .tint1 {
   background-color: rgba(00, 00, 33, .90);
   border-radius: 12px;
-  box-shadow: 0 0 120px yellow;
+  box-shadow: 0 12px 40px -6px rgba(00, 00, 33, .90);
 }
