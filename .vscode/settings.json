@@ -2,23 +2,23 @@
 {
   "files.exclude": {
     "**/_ARTWORK": true,
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
     "**/.DS_Store": true,
+    "**/.git": true,
     "**/.gitignore": true,
+    "**/.hg": true,
+    "**/.svn": true,
     "**/.travis.yml": true,
     "**/bower.json": true,
     "**/cSpell.json": true,
-    "**/Gruntfile.js": true,
-    "**/plugin": true,
-    "**/test": true,
     "**/css": true,
+    "**/Gruntfile.js": true,
     "**/js": true,
     "**/lib": true,
     "**/package.json": true,
+    "**/plugin": true,
     "**/README.md": true,
-    "**/yarn.lock": true
+    "**/test": true,
+    "**/yarn.lock": true,
   },
   "cSpell.words": []
 }
