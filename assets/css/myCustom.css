@@ -9,3 +9,16 @@
   border-radius: 12px;
   box-shadow: 0 12px 40px -6px rgba(00, 00, 33, .90);
 }
+
+.flexd ul {
+  border: 2px solid green;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1;
+}
+
+.flexd ul li {
+  border: 2px solid yellow;
+}

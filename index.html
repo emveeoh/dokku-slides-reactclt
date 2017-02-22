@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Presenting: Dokku</title>
+	<title>Dokku</title>
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/night.css">
 	<!-- Theme used for syntax highlighting of code -->
@@ -52,11 +52,47 @@
 			</section>
 			<!-- ================================ -->
 			<section>
-				<h2>What are buildpacks?</h2>
-				<h4>Buildpacks = installation scripts</h4>
-				<p>Depending on the programming language, the scripts will retrieve dependencies, output generated assets or compiled code, and more.</p>
-				<p>Heroku currently has buildpacks for:<span style="color: yellow;"><br>Ruby, Python, Java, Clojure,<br>Node.js, Scala, Go and PHP</span></p>
-					<p>All of Heroku's buildpacks are open-source.</p>
+				<section id="fragments">
+					<h2>What are buildpacks?</h2>
+					<h4 class="fragment" style="color: greenyellow; background-color: darkblue; padding: 8px; border-radius: 12px;">buildpacks <span style="color: white;">=</span> installation scripts</h4>
+					<p class="fragment">Retrieve and install dependencies (NPM, Yarn, etc), output generated assets or compiled code, configure the web server,
+						and more...</p>
+					<div class="fragment">Heroku currently has buildpacks for:
+						<p style="color: yellow;">Ruby, Python, Java, Clojure,<br>Node.js, Scala, Go and PHP</p>
+						</spa>
+						<p class="fragment">All of Heroku's buildpacks are open-source.</p>
+				</section>
+			</section>
+			<!-- ================================ -->
+			<section>
+				<section id="fragments">
+					<h2>Heroku is awesome...</h2>
+					<h2 class="fragment">...but too expen$ive</h2>
+				</section>
+			</section>
+			<!-- ================================ -->
+			<section data-background-video="./assets/video/sea2-dark.mp4" data-background-video-loop="loop">
+				<img class="shake-slow-one shake-constant-one" style="width: 360px; vertical-align: middle;" src="./assets/img/DokkuLogo1.png"><br>
+				<h1 class="shake-slow-two shake-constant-two" style="margin-top: -40px;">Dokku</h1>
+				<h3 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">Your own mini-Heroku on any low-cost Linux vm provider</h3>
+			</section>
+			<!-- ================================ -->
+			<section>
+					<h2>Most Popular <span style="color: yellow;">$5/month</span> VM Providers:</h2>
+					<ul class="flexd">
+						<li class="flexd">one</li>
+						<li class="flexd">two</li>
+					</ul>
+					<ul>
+						<li>LightSail/Amazon Web Services (AWS)</li>
+						<li>Google Cloud</li>
+						<li>Microsoft Azure</li>
+						<li>DigitalOcean</li>
+						<li>Linode</li>
+						<li>Vultr</li>
+						<li>Scaleway</li>
+					</ul>
+					<p>~512 MB Memory | 1 Core Processor | 20 GB SSD Disk | 1 TB Transfer </p>
 			</section>
 			<!-- ================================ -->
 			<section>
@@ -206,41 +242,41 @@
 			<section>
 				...
 			</section>
+			</div>
 		</div>
-	</div>
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-	<script>
-		// More info https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: false,
-			progress: true,
-			history: true,
-			center: true,
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
 
-			transition: 'convex', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-			// More info https://github.com/hakimel/reveal.js#dependencies
-			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true,
-					callback: function () {
-						hljs.initHighlightingOnLoad();
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [{
+						src: 'plugin/markdown/marked.js'
+					},
+					{
+						src: 'plugin/markdown/markdown.js'
+					},
+					{
+						src: 'plugin/notes/notes.js',
+						async: true
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
 					}
-				}
-			]
-		});
-	</script>
+				]
+			});
+		</script>
 </body>
 
 </html>

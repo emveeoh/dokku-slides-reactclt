@@ -10,15 +10,15 @@
     "**/.travis.yml": true,
     "**/bower.json": true,
     "**/cSpell.json": true,
-    "**/css": true,
+    "css": true,
     "**/Gruntfile.js": true,
-    "**/js": true,
+    "js": true,
     "**/lib": true,
     "**/package.json": true,
     "**/plugin": true,
     "**/README.md": true,
     "**/test": true,
-    "**/yarn.lock": true,
+    "**/yarn.lock": true
   },
   "cSpell.words": []
 }
