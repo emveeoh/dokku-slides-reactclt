@@ -1,16 +1,24 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "files.exclude": {
+    "**/_ARTWORK": true,
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
     "**/.gitignore": true,
-    "**/.travis": true,
-    "**/.bower": true,
-    "**/.Gruntfile.js": true,
+    "**/.travis.yml": true,
+    "**/bower.json": true,
+    "**/cSpell.json": true,
+    "**/Gruntfile.js": true,
     "**/plugin": true,
     "**/test": true,
+    "**/css": true,
+    "**/js": true,
+    "**/lib": true,
+    "**/package.json": true,
+    "**/README.md": true,
+    "**/yarn.lock": true
   },
   "cSpell.words": []
 }
