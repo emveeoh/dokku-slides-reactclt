@@ -1,1 +1,1 @@
-Presentation slideshow on Dokku installation on AWS
+Presentation slideshow on Dokku installation on AWS. To watch the presentation, simply clone this git repo onto your local pc.  Then, open the 'index.html' file in your browser.
