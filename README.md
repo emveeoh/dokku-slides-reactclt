@@ -1,1 +1,1 @@
-Presentation slideshow on Dokku installation on AWS for ReactCLT Meetup (March 8, 2017).
+Presentation slideshow on Dokku installation on AWS
