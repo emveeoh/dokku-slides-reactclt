@@ -47,11 +47,11 @@
 					<h2>Quick Survey:</h2>
 					<br>
 					<div class="fragment current-visible fade-up">
-						<h3 style="color: yellow;">Who has deployed an app to a Cloud Provider?</h3>
+						<h3 style="color: yellow;">Who is currently using<br>a cloud provider?</h3>
 						<h5>Amazon (AWS), Google Cloud, DigitalOcean, Microsoft Azure, Linode, etc...</h5>
 					</div>
 					<div class="fragment current-visible fade-up">
-						<h3>Who has heard of <span style="color:mediumpurple;">Heroku</span> or used it?</h3>
+						<h3 style="color: yellow;">Who has used <span style="color:white;">Heroku</span>?</h3>
 					</div>
 				</section>
 			</section>
@@ -67,13 +67,13 @@
 				</div>
 			</section>
 			<!-- ================================ -->
-			<section data-background-video="./assets/video/Heroku-Push-Example.mp4">
-			</section>
+			<!--<section data-background-video="./assets/video/Heroku-Push-Example.mp4">
+			</section>-->
 			<!-- ================================ -->
 			<section>
 				<section>
 					<h2>What is a buildpack?</h2>
-					<h4 class="fragment fade-up" style="color: greenyellow; background-color: darkblue; padding: 8px; margin-bottom: 40px; border-radius: 12px;">buildpack <span style="color: white;">=</span> installation script</h4>
+					<h4 class="fragment fade-up" style="color: greenyellow; background-color: darkblue; padding: 8px; margin-bottom: 40px; border-radius: 12px;">buildpack <span style="color: white;">===</span> installation script</h4>
 
 					<ul>
 						<li class="fragment fade-up">Retrieves and install dependencies (NPM, etc).</li>
@@ -99,16 +99,16 @@
 			</section>
 			<!-- ================================ -->
 			<section>
-				<img src="./assets/img/github-dokkupage.png" style="border: 12px solid white;">
+				<img src="./assets/img/github-dokkupage2.png" style="border: 12px solid white;">
 				<ul style="font-size: 32px;">
 					<li class="fragment fade-up">Open-source project released in 2013 by Jeff Lindsay.</li>
-					<li class="fragment fade-up"><span style="color: yellow;font-weight: 700;">13,000+ stars</span> and <span style="color: yellow;font-weight: 700;">260+ contributors</span>						on Github.</li>
-					<li class="fragment fade-up">Runs within a Docker container running Ngnix webserver.</li>
-					<li class="fragment fade-up">Auto-magically configures Ngnix for you.</li>
-					<li class="fragment fade-up">Multiple sub-domains per instance.</li>
+					<li class="fragment fade-up"><span style="color: yellow;font-weight: 700;">13,000+ stars</span> and <span style="color: yellow;font-weight: 700;">260+ contributors </span>on Github.</li>
+					<li class="fragment fade-up">Auto-magically configures a Docker container with Ngnix.</li>
+					<li class="fragment fade-up">Zero-downtime deployments.</li>
+					<li class="fragment fade-up">Can configure multiple sub-domains.</li>
 					<li class="fragment fade-up">Uses Heroku buildpacks, custom buildpacks or Dockerfiles.</li>
 					<li class="fragment fade-up">Awesome documentation. Easy to understand.</li>
-					<li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">plugins</span> to extend its abilities...</li>
+					<li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">plugins</span> to extend its capabilities...</li>
 				</ul>
 			</section>
 			<!-- ================================ -->
@@ -152,8 +152,8 @@
 				</div>
 			</section>
 			<!-- ================================ -->
-			<section data-background-transition="fade">
-				<h1>Demo Time</h1>
+			<section data-background-video="./assets/video/fishtank-darkblue.mp4" data-background-video-loop="loop">
+				<h1 style="color: yellow;font-size: 240px;"><span class="shake-slow-one shake-constant-one">demo</span><br><span class="shake-slow-two shake-constant-two">time</span></h1>
 			</section>
 			<!-- ================================ -->
 			<section data-transition="slide">
@@ -178,7 +178,7 @@
 				<h2 style="color: yellow;">Add a new DNS Zone<br>and assign A-records</h2>
 			</section>
 			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/03.mp4"></section>
+			<section data-background-video="./assets/video/demos/11.mp4"></section>
 			<!-- ================================ -->
 			<section>
 				<h2 style="color: yellow;">SSH into your server<br>from your local terminal</h2>
@@ -197,23 +197,25 @@
 			<section data-background-video="./assets/video/demos/06.mp4"></section>
 			<!-- ================================ -->
 			<section>
-				<h2 style="color: yellow;">Add your SSH public key<br>to the Dokku server</h2>
+				<h2>Dokku is installed.</h2>
+				<h2 style="color: yellow;">Add your public SSH key</h2>
 			</section>
 			<!-- ================================ -->
 			<section data-background-video="./assets/video/demos/07b.mp4"></section>
 			<!-- ================================ -->
 			<section>
-				<h2>Dokku is installed</h2>
-				<h2 style="color: yellow;">Deploy a Node JS app<br><br><span style="color: lawngreen;">(emveeoh)</span></h2>
+				<h2 style="color: yellow;">Deploy a Node/Express app<br><br><span style="color: lawngreen;">(emveeoh)</span></h2>
 			</section>
 			<!-- ================================ -->
 			<section data-background-video="./assets/video/demos/08.mp4"></section>
 			<!-- ================================ -->
 			<section>
-				<h2 style="color: yellow;">Deploy a React app<br>using a custom buildpack<br><br><span style="color: lawngreen;">(paypie)</span></h2>
+				<h2 style="color: yellow;">Deploy a React app<br>using a custom buildpack<br><br><span style="color: lawngreen;">(myReactApp)</span></h2>
 			</section>
 			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/09.mp4"></section>
+			<section data-background-video="./assets/video/demos/09B-CustomBuildpack.mp4"></section>
+			<!-- ================================ -->
+			<section data-background-video="./assets/video/demos/xxxxxx.mp4"></section>
 			<!-- ================================ -->
 			<section>
 				<h2 style="color: yellow;">Finally, add HTTPS<br>using a Dokku plugin</h2>
