@@ -4267,7 +4267,7 @@
 	function hideMouseAfterTime(){
 		document.body.onmousemove = function(){
 			showMouse();
-			setTimeout(hideMouse,2000);
+			setTimeout(hideMouse,500);
 		}
 	}
 
