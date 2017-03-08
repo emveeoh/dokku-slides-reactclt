@@ -2,264 +2,264 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Intro To Dokku </title>
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/night.css">
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
-	<!--Library for css shaking animations-->
-	<link rel="stylesheet" type="text/css" href="./assets/css/csshake-slow-one.min.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/csshake-slow-two.min.css">
-	<!-- My Custom CSS -->
-	<link rel="stylesheet" href="./assets/css/myCustom.css">
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Intro To Dokku </title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!--Library for css shaking animations-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/csshake-slow-one.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/csshake-slow-two.min.css">
+  <!-- My Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/myCustom.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 </head>
 
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/sea1.mp4" data-background-video-loop="loop">
-				<div>
-					<h1 style="margin-bottom: -30px;">Dokku</h1>
-					<h2 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">(Docker + Heroku)</h2>
-					<div style="display: flex; align-items: center;">
-						<div class="shake-slow-one shake-constant-one" style="flex: 1.4;"><img src="./assets/img/DokkuLogo1.png" style="margin: 0px; border: none;"></div>
-						<div class="shake-slow-two shake-constant-two" style="flex: 1.8;"><img src="./assets/img/AWSLightsailLogo1.png" style="margin: 0px; border: none;"></div>
-					</div>
-					<div>
-						<h4 class="tint1" style="box-shadow: 0 6px 12px rgba(00,00,33,.5); border-radius: 12px;">Deploy apps to the cloud using 'GIT PUSH' on<br><span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
-					</div>
-				</div>
-			</section>
-			<!-- ================================ -->
-			<section>
-				<section>
-					<h2>Quick Survey:</h2>
-					<br>
-					<div class="fragment current-visible fade-up">
-						<h3 style="color: yellow;">Who is currently using<br>a cloud provider?</h3>
-						<h5>Amazon (AWS), Google Cloud, DigitalOcean, Microsoft Azure, Linode, etc...</h5>
-					</div>
-					<div class="fragment current-visible fade-up">
-						<h3 style="color: yellow;">Who has used <span style="color:white;">Heroku</span>?</h3>
-					</div>
-				</section>
-			</section>
-			<!-- ================================ -->
-			<section>
-				<img src="./assets/img/Heroku_logo.svg" style="filter: grayscale()
+  <div class="reveal">
+    <div class="slides">
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/sea1.mp4" data-background-video-loop="loop">
+        <div>
+          <h1 style="margin-bottom: -30px;">Dokku</h1>
+          <h2 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">(Docker + Heroku)</h2>
+          <div style="display: flex; align-items: center;">
+            <div class="shake-slow-one shake-constant-one" style="flex: 1.4;"><img src="./assets/img/DokkuLogo1.png" style="margin: 0px; border: none;"></div>
+            <div class="shake-slow-two shake-constant-two" style="flex: 1.8;"><img src="./assets/img/AWSLightsailLogo1.png" style="margin: 0px; border: none;"></div>
+          </div>
+          <div>
+            <h4 class="tint1" style="box-shadow: 0 6px 12px rgba(00,00,33,.5); border-radius: 12px;">Deploy apps to the cloud using 'GIT PUSH' on<br><span style="color: yellow;">AWS, Google Cloud, Azure, Linode, DigitalOcean</span></h4>
+          </div>
+        </div>
+      </section>
+      <!-- ================================ -->
+      <section>
+        <section>
+          <h2>Quick Survey:</h2>
+          <br>
+          <div class="fragment current-visible fade-up">
+            <h3 style="color: yellow;">Who is currently using<br>a cloud provider?</h3>
+            <h5>Amazon (AWS), Google Cloud, DigitalOcean, Microsoft Azure, Linode, etc...</h5>
+          </div>
+          <div class="fragment current-visible fade-up">
+            <h3 style="color: yellow;">Who has used <span style="color:white;">Heroku</span>?</h3>
+          </div>
+        </section>
+      </section>
+      <!-- ================================ -->
+      <section>
+        <img src="./assets/img/Heroku_logo.svg" style="filter: grayscale()
 				 brightness(999%); width: 400px;">
-				<p>A Platform as a Service (PaaS) that<br>makes app deployment fast and simple.</p>
-				<br>
-				<div class="fragment current-visible fade-up">
-					<code class="hljs" style="color: yellow;">git push heroku master</code>
-					<p>Uses git-push to upload your app and configure your server using a buildpack.</p>
-				</div>
-			</section>
-			<!-- ================================ -->
-			<section>
-				<section>
-					<h2>What is a buildpack?</h2>
-					<h4 class="fragment fade-up" style="color: greenyellow; background-color: darkblue; padding: 8px; margin-bottom: 40px; border-radius: 12px;">buildpack <span style="color: white;">===</span> installation script</h4>
+        <p>A Platform as a Service (PaaS) that<br>makes app deployment fast and simple.</p>
+        <br>
+        <div class="fragment current-visible fade-up">
+          <code class="hljs" style="color: yellow;">git push heroku master</code>
+          <p>Uses git-push to upload your app and configure your server using a buildpack.</p>
+        </div>
+      </section>
+      <!-- ================================ -->
+      <section>
+        <section>
+          <h2>What is a buildpack?</h2>
+          <h4 class="fragment fade-up" style="color: greenyellow; background-color: darkblue; padding: 8px; margin-bottom: 40px; border-radius: 12px;">buildpack <span style="color: white;">===</span> installation script</h4>
 
-					<ul id="buildpack">
-						<li class="fragment fade-up">Retrieves and install dependencies (NPM, etc).</li>
-						<li class="fragment fade-up">Outputs generated assets or compiled code.</li>
-						<li class="fragment fade-up">Configures the server or webserver.</li>
-						<li class="fragment fade-up">Heroku has official buildpacks for: <span style="color: yellow;">Ruby, Python, Java, Clojure, Node.js, Scala, Go and PHP</span></li>
-						<li class="fragment fade-up">Heroku's buildpacks are open-source.</li>
-					</ul>
+          <ul id="buildpack">
+            <li class="fragment fade-up">Retrieves and install dependencies (NPM, etc).</li>
+            <li class="fragment fade-up">Outputs generated assets or compiled code.</li>
+            <li class="fragment fade-up">Configures the server or webserver.</li>
+            <li class="fragment fade-up">Heroku has official buildpacks for: <span style="color: yellow;">Ruby, Python, Java, Clojure, Node.js, Scala, Go and PHP</span></li>
+            <li class="fragment fade-up">Heroku's buildpacks are open-source.</li>
+          </ul>
 
-				</section>
-			</section>
-			<!-- ================================ -->
-			<section>
-				<h2>Heroku is awesome...</h2>
-				<h2 class="fragment fade-up">...but can get expen<span style="color: lawngreen">$</span>ive</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/sea2-dark.mp4" data-background-video-loop="loop">
-				<audio data-autoplay src="./assets/video/trumpet-fanfare.mp3"></audio>
-				<img class="shake-slow-one shake-constant-one" style="width: 360px; vertical-align: middle;" src="./assets/img/DokkuLogo1.png"><br>
-				<h1 class="shake-slow-two shake-constant-two" style="margin-top: -40px;">Dokku</h1>
-				<h3 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">Your own mini-Heroku on any cloud hosting provider</h3>
-			</section>
-			<!-- ================================ -->
-			<section>
-				<img src="./assets/img/github-dokkupage2.png" style="border: 8px solid white;">
-				<ul id="github-dokku" style="font-size: 31px;">
-					<li class="fragment fade-up">Open-source project released in 2013 by Jeff Lindsay.</li>
-					<li class="fragment fade-up"><span style="color: yellow;font-weight: 700;">13,000+ stars</span> and <span style="color: yellow;font-weight: 700;">260+ contributors </span>on
-						Github.
-					</li>
-					<li class="fragment fade-up">Auto-magically configures a Docker container with Ngnix.</li>
-					<li class="fragment fade-up">Does zero-downtime deployments.</li>
-					<li class="fragment fade-up">Easy configuration of multiple sub-domains.</li>
-					<li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">Heroku buildpacks</span>, <span style="color: yellow;font-weight: 700;">custom buildpacks</span>						or <span style="color: yellow;font-weight: 700;">Dockerfiles</span>.</li>
-					<li class="fragment fade-up">Awesome documentation. Very easy to understand.</li>
-					<li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">plugins</span> to extend its capabilities...</li>
-				</ul>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/dokku-plugins.mp4" style="position: relative; width: 80vw;">
+        </section>
+      </section>
+      <!-- ================================ -->
+      <section>
+        <h2>Heroku is awesome...</h2>
+        <h2 class="fragment fade-up">...but can get expen<span style="color: lawngreen">$</span>ive</h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/sea2-dark.mp4" data-background-video-loop="loop">
+        <audio data-autoplay src="./assets/video/trumpet-fanfare.mp3"></audio>
+        <img class="shake-slow-one shake-constant-one" style="width: 360px; vertical-align: middle;" src="./assets/img/DokkuLogo1.png"><br>
+        <h1 class="shake-slow-two shake-constant-two" style="margin-top: -40px;">Dokku</h1>
+        <h3 style="text-shadow: 0 6px 12px rgba(00,00,33,.5); margin-bottom: -10px;">Your own mini-Heroku on any cloud hosting provider</h3>
+      </section>
+      <!-- ================================ -->
+      <section>
+        <img src="./assets/img/github-dokkupage2.png" style="border: 8px solid white;">
+        <ul id="github-dokku" style="font-size: 31px;">
+          <li class="fragment fade-up">Open-source project released in 2013 by Jeff Lindsay.</li>
+          <li class="fragment fade-up"><span style="color: yellow;font-weight: 700;">13,000+ stars</span> and <span style="color: yellow;font-weight: 700;">260+ contributors </span>on
+            Github.
+          </li>
+          <li class="fragment fade-up">Auto-magically configures a Docker container with Ngnix.</li>
+          <li class="fragment fade-up">Does zero-downtime deployments.</li>
+          <li class="fragment fade-up">Easy configuration of multiple sub-domains.</li>
+          <li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">Heroku buildpacks</span>, <span style="color: yellow;font-weight: 700;">custom buildpacks</span>            or <span style="color: yellow;font-weight: 700;">Dockerfiles</span>.</li>
+          <li class="fragment fade-up">Awesome documentation. Very easy to understand.</li>
+          <li class="fragment fade-up">Uses <span style="color: yellow;font-weight: 700;">plugins</span> to extend its capabilities...</li>
+        </ul>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/dokku-plugins.mp4" style="position: relative; width: 80vw;">
 
-				<div class="tint1" style="float:right; padding: 30px 30px 0; height: 100vh; font-weight: 700;">
-					<h3 style="color: lightskyblue;">Plugin Types:</h3>
-					<ul id="plugin-types" style="font-size: 36px;">
-						<li>Database</li>
-						<li>Caching</li>
-						<li>Queuing</li>
-						<li>Process Managers</li>
-						<li>Monitoring / Metrics</li>
-						<li>Security</li>
-						<li>Domain Admin</li>
-						<li>Container Utilities</li>
-						<li>File Utilities</li>
-						<li>Maintenance</li>
-					</ul>
-					<div style="list-style: none; font-style: italic; text-align: right; color: white;">and more...</div>
-				</div>
+        <div class="tint1" style="float:right; padding: 30px 30px 0; height: 100vh; font-weight: 700;">
+          <h3 style="color: lightskyblue;">Plugin Types:</h3>
+          <ul id="plugin-types" style="font-size: 36px;">
+            <li>Database</li>
+            <li>Caching</li>
+            <li>Queuing</li>
+            <li>Process Managers</li>
+            <li>Monitoring / Metrics</li>
+            <li>Security</li>
+            <li>Domain Admin</li>
+            <li>Container Utilities</li>
+            <li>File Utilities</li>
+            <li>Maintenance</li>
+          </ul>
+          <div style="list-style: none; font-style: italic; text-align: right; color: white;">and more...</div>
+        </div>
 
-			</section>
-			<!-- ================================ -->
-			<section>
-				<h3>Uses inexpensive providers:</h3>
-				<div style="margin-bottom: 50px;">
-					<div style="font-size: 38px; padding: 8px; background-color:darkgreen; border: 2px solid white; border-radius: 8px;">Debian/Ubuntu: 512 MB RAM, 20 GB SSD, 1 TB DATA</div>
-				</div>
-				<div class="fragment fade-up">
-					<ul id="cloud-providers">
-						<li><span style="color: yellow;font-weight: 700;">Amazon/AWS/Lightsail</span> ($5.00)</li>
-						<li><span style="color: yellow;font-weight: 700;">Google Cloud</span> ($5.00)</li>
-						<li><span style="color: yellow;font-weight: 700;">Microsoft Azure</span> ($13.00)</li>
-						<li><span style="color: yellow;font-weight: 700;">DigitalOcean</span> ($5.00)</li>
-						<li><span style="color: yellow;font-weight: 700;">Linode</span> ($5.00)</li>
-						<li><span style="color: yellow;font-weight: 700;">OVH</span> ($3.50)</li>
-						<li><span style="color: yellow;font-weight: 700;">Scaleway</span> ($3.50)</li>
-						<li><span style="color: yellow;font-weight: 700;">Vultr</span> ($2.50)</li>
-					</ul>
-				</div>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/fishtank-darkblue.mp4" data-background-video-loop="loop" data-transition="zoom">
-				<h1 style="color: yellow; font-size: 240px; text-shadow: 3px 3px 6px rgba(0, 0, 0,1); padding: 0;"><span class="shake-slow-one shake-constant-one">demo</span><br><span class="shake-slow-two shake-constant-two">time</span></h1>
-			</section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Let's spin up a<br>$5 Ubuntu server<br>on AWS LightSail</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/01.mp4" data-transition="slide"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Add a static IP</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/02.mp4" data-transition="slide"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Setup DNS<br><span style="color: lawngreen;">emveeoh.com</span></h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/11.mp4" data-transition="slide"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">SSH into the server<br>from our local terminal</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/05b.mp4" data-transition="slide" style="position: relative; height: 90vh;"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Install Dokku using the<br><span style="color: lawngreen;">bootstrap.sh script</span></h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/06.mp4"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2>Open Dokku Setup Page</h2>
-				<h2 style="color: yellow;">Add our public SSH key</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/07b.mp4"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Deploy our first<br>Node/Express app<br><br><span style="color: lawngreen;">(emveeoh)</span></h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/08.mp4"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2 style="color: yellow;">Deploy a React app<br>using a custom buildpack<br><br><span style="color: lawngreen;">(my-react-app)</span></h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/09.mp4"></section>
-			<!-- ================================ -->
-			<section data-transition="slide">
-				<h2>One last thing...<br></h2>
-				<h2 style="color: yellow;">Add HTTPS to our apps<br>using a Dokku plugin</h2>
-			</section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/demos/12.mp4"></section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/MAGIC1.mp4" data-background-video-loop="loop"></section>
-			<!-- ================================ -->
-			<section data-background-video="./assets/video/beach1.mp4" data-background-video-loop="loop" data-transition="zoom">
-				<div style="margin-bottom: 340px; padding: 22px;">
-					<ul style="list-style: none; font-family: 'Montserrat', sans-serif; text-align: center;color: yellow;">
-						<li style="color: white;font-weight: 700;">Official Docs:</li>
-						<li>github.com/dokku</li>
-						<li>dokku.viewdocs.io/dokku</li>
-						<br>
-						<li style="color: white;font-weight: 700;">My step-by-step install guide:</li>
-						<li>github.com/emveeoh</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</div>
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-	<script>
-		// More info https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: false,
-			progress: true,
-			history: true,
-			center: true,
+      </section>
+      <!-- ================================ -->
+      <section>
+        <h3>Uses inexpensive providers:</h3>
+        <div style="margin-bottom: 50px;">
+          <div style="font-size: 38px; padding: 8px; background-color:darkgreen; border: 2px solid white; border-radius: 8px;">Debian/Ubuntu: 512 MB RAM, 20 GB SSD, 1 TB DATA</div>
+        </div>
+        <div class="fragment fade-up">
+          <ul id="cloud-providers">
+            <li><span style="color: yellow;font-weight: 700;">Amazon/AWS/Lightsail</span> ($5.00)</li>
+            <li><span style="color: yellow;font-weight: 700;">Google Cloud</span> ($5.00)</li>
+            <li><span style="color: yellow;font-weight: 700;">Microsoft Azure</span> ($13.00)</li>
+            <li><span style="color: yellow;font-weight: 700;">DigitalOcean</span> ($5.00)</li>
+            <li><span style="color: yellow;font-weight: 700;">Linode</span> ($5.00)</li>
+            <li><span style="color: yellow;font-weight: 700;">OVH</span> ($3.50)</li>
+            <li><span style="color: yellow;font-weight: 700;">Scaleway</span> ($3.50)</li>
+            <li><span style="color: yellow;font-weight: 700;">Vultr</span> ($2.50)</li>
+          </ul>
+        </div>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/fishtank-darkblue.mp4" data-background-video-loop="loop" data-transition="zoom">
+        <h1 style="color: yellow; font-size: 240px; text-shadow: 3px 3px 6px rgba(0, 0, 0,1); padding: 0;"><span class="shake-slow-one shake-constant-one">demo</span><br><span class="shake-slow-two shake-constant-two">time</span></h1>
+      </section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">Let's spin up a<br>$5 Ubuntu server<br>on AWS LightSail</h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/01.mp4" data-transition="slide"></section>
+      <!-- ================================ -->
+      <!--<section data-transition="slide">
+        <h2 style="color: yellow;">Add a static IP</h2>
+      </section>-->
+      <!-- ================================ -->
+      <!--<section data-background-video="./assets/video/demos/02.mp4" data-transition="slide"></section>-->
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">Setup DNS<br><span style="color: lawngreen;">emveeoh.com</span></h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/11.mp4" data-transition="slide"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">SSH into the server<br>from our local terminal</h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/05b.mp4" data-transition="slide" style="position: relative; height: 90vh;"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">Install Dokku using the<br><span style="color: lawngreen;">bootstrap.sh script</span></h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/06.mp4"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2>Open Dokku Setup Page</h2>
+        <h2 style="color: yellow;">Add our public SSH key</h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/07b.mp4"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">Deploy our first<br>Node/Express app<br><br><span style="color: lawngreen;">(emveeoh)</span></h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/08.mp4"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2 style="color: yellow;">Deploy a React app<br>using a custom buildpack<br><br><span style="color: lawngreen;">(my-react-app)</span></h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/09.mp4"></section>
+      <!-- ================================ -->
+      <section data-transition="slide">
+        <h2>One last thing...<br></h2>
+        <h2 style="color: yellow;">Add HTTPS to our apps<br>using a Dokku plugin</h2>
+      </section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/demos/12.mp4"></section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/MAGIC1.mp4" data-background-video-loop="loop"></section>
+      <!-- ================================ -->
+      <section data-background-video="./assets/video/beach1.mp4" data-background-video-loop="loop" data-transition="zoom">
+        <div style="margin-bottom: 340px; padding: 22px;">
+          <ul style="list-style: none; font-family: 'Montserrat', sans-serif; text-align: center;color: yellow;">
+            <li style="color: white;font-weight: 700;">Official Docs:</li>
+            <li>github.com/dokku</li>
+            <li>dokku.viewdocs.io/dokku</li>
+            <br>
+            <li style="color: white;font-weight: 700;">My step-by-step install guide:</li>
+            <li>github.com/emveeoh</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: true,
+      history: true,
+      center: true,
 
-			transition: 'convex', // none/fade/slide/convex/concave/zoom
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-			// More info https://github.com/hakimel/reveal.js#dependencies
-			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true,
-					callback: function () {
-						hljs.initHighlightingOnLoad();
-					}
-				}
-			]
-		});
-	</script>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 
 </html>
