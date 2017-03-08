@@ -9,3 +9,36 @@
   border-radius: 12px;
   box-shadow: 0 12px 40px -6px rgba(00, 00, 33, .90);
 }
+
+#cloud-providers li:before {
+  font-family: 'FontAwesome';
+  content: '\f0c2';
+  margin: 0 20px 0 0;
+  color: white;
+}
+
+#plugin-types li:before {
+  font-family: 'FontAwesome';
+  content: '\f12e';
+  margin: 0 20px 0 0;
+  color: lightskyblue;
+}
+
+#buildpack li:before {
+  font-family: 'FontAwesome';
+  content: '\f058';
+  margin: 0 20px 0 0;
+  color: white;
+}
+
+#github-dokku li:before {
+  font-family: 'FontAwesome';
+  content: '\f09b';
+  margin: 0 10px 0 0;
+  color: limegreen;
+}
+
+#cloud-providers, #plugin-types, #buildpack, #github-dokku {
+  list-style: none;
+}
+

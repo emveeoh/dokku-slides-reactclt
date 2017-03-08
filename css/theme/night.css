@@ -19,6 +19,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: local('FontAwesome'), url('../../assets/fonts/FontAwesome/fontawesome-webfont.ttf') format('truetype');
+  font-style: normal;
+}
+
 
 /*********************************************
  * GLOBAL STYLES
