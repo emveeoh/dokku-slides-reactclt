@@ -5,24 +5,20 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
-
-/*@import url();*/
-
-
-/*@import url(https://fonts.googleapis.com/css?family=Montserrat:700);*/
-
-
-/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);*/
-
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat'), url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  src: local('Montserrat'), url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: local('Open Sans'), url('../../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+  src: local('Open Sans'), url('../../assets/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
+
 
 /*********************************************
  * GLOBAL STYLES
